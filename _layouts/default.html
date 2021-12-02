@@ -1,0 +1,25 @@
+{% include html-head.liquid %}
+
+<body>
+
+  <!--[if lt IE 10]>
+  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+{% include header.liquid %}
+
+<div class="main-content">
+
+  {{ content }}
+
+</div>
+  
+
+{% include footer.liquid %}
+
+{% include google-analytics.html %}
+
+<script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+
+</body>
+</html>

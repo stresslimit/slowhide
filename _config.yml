@@ -1,0 +1,41 @@
+---
+title: Slowhide — Slow Factory Labs
+timezone: America/New_York
+collections:
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:path"
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: default
+# destination: docs/
+future: true
+permalink: pretty
+plugins:
+- jekyll-redirect-from
+exclude:
+- .firebaserc
+- _js
+- _css
+- deprecated
+- README.md
+- firebase.json
+- gemfiles/
+- Gemfile
+- Gemfile.lock
+- node_modules/
+- package.json
+- postcss.config.js
+- webpack.config.js
+- webpack.config.babel.js
+- vendor/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- yarn-error.log
+- yarn.lock

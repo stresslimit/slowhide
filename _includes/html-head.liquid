@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.title }}</title>
+
+{% comment %}
+{% include social-meta-tags.liquid %}
+{% endcomment %}
+
+<link rel="stylesheet" href="/assets/css/style.css?c={{ site.data.webpack.hash }}">
+<script src="/assets/js/app.js?c={{ site.data.webpack.hash }}"></script>
+
+<link rel="icon" href="{{ 'images/logos/favicon-s-mark-filled.png' | asset_url }}" type="image/x-icon">
+
+</head>

@@ -1,0 +1,41 @@
+
+{% include menu-mobile.liquid %}
+
+<div class="header-container">
+
+  <div class="container">
+
+    <div class="header flex">
+
+
+      <div class="flex" style="max-width:90%">
+        <a href="https://slowfactorylabs.co"><img src="{{ 'images/logos/slow-factory-logo-labs-white.png' | asset_url }}" alt="Slow Factory Labs" class="slow-factory-logo"></a>
+
+        {% unless page.name == 'index.html' %}
+        <div class="title-md">
+          |
+        </div>
+        <div class="title-sm" style="margin-left:.7em">
+
+            {{ page.title | replace: ":", ":<br>" }}
+
+        </div>
+        {% endunless %}
+      </div>
+
+
+      <!-- <div class="flex">
+
+        <div class="burger-menu js-show-mobile-menu burger-menu-placement">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div> -->
+
+
+    </div>
+  </div>
+
+</div>

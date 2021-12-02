@@ -1,0 +1,304 @@
+
+/* Util
+*/
+.on-dark-bg, .on-dark-bg a {
+  color: var(--white);
+}
+.bg-paper {
+  background: #ecebe7 url(/assets/images/util/bg-paper1.jpg) 0 0 repeat;
+  color: black;
+}
+.bg-letter {
+  background-image: url(/assets/images/util/bg-letter.jpg);
+  background-size: cover;
+  color: black;
+}
+.bg-rounded {
+  padding: 1em;
+  border-radius: 1em;
+}
+.outline-white {
+  border: 2px solid var(--white);
+  padding: 1em;
+}
+.outline-black {
+  border: 2px solid black;
+  padding: 1em;
+}
+
+
+/* to fix solid color bg with padding on flex cols */
+.left-bg.bg-dark-green {
+  border-left: var(--unit) solid var(--dark-green);
+}
+.right-bg.bg-dark-green {
+  border-right: var(--unit) solid var(--dark-green);
+}
+@media (--viewport-md) {
+  .row .left-bg {
+    border-left: var(--unit) solid var(--white);
+  }
+  .row .right-bg {
+    border-right: var(--unit) solid var(--white);
+  }
+}
+
+/* Colours
+*/
+.dark-grey {
+  color: var(--dark-grey);
+}
+.grey {
+  color: var(--grey);
+}
+.green {
+  color: var(--green);
+}
+.dark-green {
+  color: var(--dark-green);
+}
+.light-green {
+  color: var(--light-green);
+}
+.orange {
+  color: var(--orange);
+}
+.bright-orange {
+  color: var(--bright-orange);
+}
+.red {
+  color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+.bright-blue {
+  color: var(--bright-blue);
+}
+.light-blue {
+  color: var(--light-blue);
+}
+.fuscia {
+  color: var(--fuscia);
+}
+.pink {
+  color: var(--pink);
+}
+.light-salmon {
+  color: var(--light-salmon);
+}
+.magenta {
+  color: var(--magenta);
+}
+.light-purple {
+  color: var(--light-purple);
+}
+.purple {
+  color: var(--purple);
+}
+.yellow {
+  color: var(--yellow);
+}
+.bright-yellow {
+  color: var(--bright-yellow);
+}
+.light-yellow {
+  color: var(--light-yellow);
+}
+.light-beige {
+  color: var(--light-beige);
+}
+.brown {
+  color: var(--brown);
+}
+.light-turquoise {
+  color: var(--light-turquoise);
+}
+.turquoise {
+  color: var(--turquoise);
+}
+
+
+
+/* Backgrounds
+*/
+.bg-black {
+  background: var(--black) !important;
+}
+.bg-dark-grey {
+  background: var(--dark-grey) !important;
+}
+.bg-grey {
+  background: var(--grey) !important;
+}
+.bg-light-grey {
+  background: var(--light-grey) !important;
+}
+.bg-very-light-grey {
+  background: var(--very-light-grey) !important;
+}
+.bg-green {
+  background: var(--green) !important;
+}
+.bg-dark-green {
+  background: var(--dark-green) !important;
+}
+.bg-light-green {
+  background: var(--light-green) !important;
+}
+.bg-orange {
+  background: var(--orange) !important;
+}
+.bg-bright-orange {
+  background: var(--bright-orange) !important;
+}
+.bg-red {
+  background: var(--red) !important;
+}
+.bg-blue {
+  background: var(--blue) !important;
+}
+.bg-bright-blue {
+  background: var(--bright-blue) !important;
+}
+.bg-light-blue {
+  background: var(--light-blue) !important;
+}
+.bg-fuscia {
+  background: var(--fuscia) !important;
+}
+.bg-pink {
+  background: var(--pink) !important;
+}
+.bg-light-salmon {
+  background: var(--light-salmon) !important;
+}
+.bg-magenta {
+  background: var(--magenta) !important;
+}
+.bg-light-purple {
+  background: var(--light-purple) !important;
+}
+.bg-purple {
+  background: var(--purple) !important;
+}
+.bg-yellow {
+  background: var(--yellow) !important;
+}
+.bg-bright-yellow {
+  background: var(--bright-yellow) !important;
+}
+.bg-light-yellow {
+  background: var(--light-yellow) !important;
+}
+.bg-light-beige {
+  background: var(--light-beige) !important;
+}
+.bg-brown {
+  background: var(--brown) !important;
+}
+.bg-light-turquoise {
+  background: var(--light-turquoise) !important;
+}
+.bg-turquoise {
+  background: var(--turquoise) !important;
+}
+
+.bg-deforestation-grey {
+  background: var(--deforestation-grey);
+}
+.bg-deforestation-orange {
+  background: var(--deforestation-orange);
+}
+
+
+
+/* NYT 2020
+*/
+.nyt-blue {
+  color: var(--nyt-blue);
+}
+.nyt-light-blue {
+  color: var(--nyt-light-blue);
+}
+.nyt-pink {
+  color: var(--nyt-pink);
+}
+.nyt-orange {
+  color: var(--nyt-orange);
+}
+.nyt-green {
+  color: var(--nyt-green);
+}
+.nyt-brown {
+  color: var(--nyt-brown);
+}
+.nyt-beige {
+  color: var(--nyt-beige);
+}
+
+.bg-nyt-blue {
+  background: var(--nyt-blue);
+}
+.bg-nyt-light-blue {
+  background: var(--nyt-light-blue);
+}
+.bg-nyt-pink {
+  background: var(--nyt-pink);
+}
+.bg-nyt-orange {
+  background: var(--nyt-orange);
+}
+.bg-nyt-salmon {
+  background: var(--nyt-salmon);
+}
+.bg-nyt-green {
+  background: var(--nyt-green);
+}
+.bg-nyt-brown {
+  background: var(--nyt-brown);
+}
+.bg-nyt-beige {
+  background: var(--nyt-beige);
+}
+
+/* Original Study Hall colours: mostly for cities events-big-menu */
+.salmon {
+  color: var(--salmon);
+}
+.lime {
+  color: var(--lime);
+}
+.light-grey {
+  color: var(--light-grey);
+}
+.light-grey-blue {
+  color: var(--light-grey-blue);
+}
+.medium-grey-blue {
+  color: var(--medium-grey-blue);
+}
+.dark-grey-blue {
+  color: var(--dark-grey-blue);
+}
+.light-peach {
+  color: var(--light-peach);
+}
+.dark-peach {
+  color: var(--dark-peach);
+}
+.fuscia {
+  color: var(--fuscia);
+}
+.blue {
+  color: var(--blue);
+}
+.light-purple {
+  color: var(--light-purple);
+}
+.gold {
+  color: var(--gold);
+}
+.mustard {
+  color: var(--mustard);
+}

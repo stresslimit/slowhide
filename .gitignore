@@ -1,0 +1,11 @@
+.DS_Store
+.ruby-version
+.jekyll-cache*
+.jekyll-cache/*
+.firebase*
+.firebase/*
+node_modules
+yarn.lock
+Gemfile.lock
+vendor
+_site

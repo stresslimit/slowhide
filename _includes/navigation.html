@@ -1,0 +1,138 @@
+
+<div class="nav-item">
+  <a href="/">Home</a>
+</div>
+
+<!-- <div class="nav-item">
+  <a href="/"></a>
+</div> -->
+
+
+
+<!-- <div class="nav-item">
+  <a href="/donate">Donate Now *</a>
+</div> -->
+
+<div class="nav-item">
+  <a href="/supplychange">Stop Amazon Deforestation</a>
+</div>
+
+<div class="nav-item">
+  <a href="/institute">Slow Factory Institute *</a>
+</div>
+
+
+
+
+<div class="nav-heading">
+  Ongoing Programs:
+</div>
+
+<div class="nav-group">
+
+  {% for program in site.data.homepage.programs %}
+  <div class="nav-item">
+    <a href="{{ program.link }}">{{ program.title }}</a>
+  </div>
+  {% endfor %}
+
+</div>
+
+
+
+<div class="nav-heading">
+  Current Projects:
+</div>
+
+<div class="nav-group">
+
+  <!-- <div class="nav-item">
+    <a href="/calling-home">Calling Home: Beirut Symposium</a>
+  </div> -->
+
+  {% for project in site.data.homepage.current_projects %}
+  <div class="nav-item">
+    <a href="{{ project.link }}">{{ project.title }}</a>
+  </div>
+  {% endfor %}
+
+  <div class="nav-item">
+    <a href="/superfund">Super Fund for Lebanon</a>
+  </div>
+
+
+</div>
+
+
+
+<div class="nav-item">
+  <a href="/about">About Slow Factory</a>
+</div>
+
+
+
+
+
+
+{% comment %}
+  <div class="nav-item">
+    <a href="/study-hall/">Study Hall Summit Series</a>
+  <!-- study hall subpages -->
+  { % assign pages = site.pages | where_exp: "page", "page.url contains 'study-hall'" | sort: "date", "last" | reverse %}
+  { % for item in pages %}
+    <div class="nav-item">
+      <a href="{{ item.url }}"><span class="title-xs">{{ item.title }}</span><br>
+        <!-- <span style="font-weight:400;">{{ item.date | date: "%B %e, %Y" }}</span> -->
+      </a>
+    </div>
+  { % endfor %}
+  </div>
+
+
+  <div class="nav-item">
+    <a href="/supporters">Study Hall Supporters</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/live">Study Hall Live Radio</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/sustainability-literacy/crash-course">Sustainability Literacy Crash Course</a>
+  </div>
+
+{% endcomment %}
+
+
+
+<!-- <div class="nav-heading">
+  Reading:
+</div>
+
+<div class="nav-group">
+
+  <div class="nav-item">
+    <a href="/reading/impact-marketing">Impact Marketing Guide</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/reading/faq-palestine">FAQ Palestine</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/sustainability-literacy/">Sustainability Literacy</a>
+  </div>
+
+</div>
+
+-->
+
+
+
+<!-- <div class="nav-item">
+  <a href="https://shop.slowfactory.foundation/collections/all">Exit Through the Gift Shop</a>
+</div> -->
+
+<!-- <div class="nav-item">
+  <a href="/team">Team</a>
+</div> -->
