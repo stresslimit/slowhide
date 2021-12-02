@@ -52,8 +52,6 @@ Open 2 terminal windows with the below commands, then go in the browser to http:
 
 ### Deploy
 
-We’re hosting on GitHub pages, by building `jekyll` to the `docs` folder, and merging to the `deploy` branch.
-
-We’re no longer hosting on [Firebase](https://console.firebase.google.com/u/0/project/slow-factory-foundation/)
+We’re hosting on [Firebase](https://console.firebase.google.com/u/0/project/slowhide-com/)
 
 So now it’s set up for firebase, just run `yarn run deploy-stage` or `yarn run deploy-production`.
