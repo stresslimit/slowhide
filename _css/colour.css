@@ -122,6 +122,9 @@
 
 /* Backgrounds
 */
+.bg-white {
+  background: white !important;
+}
 .bg-black {
   background: var(--black) !important;
 }
