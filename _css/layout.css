@@ -5,18 +5,11 @@
 @media (--viewport-md) {
 }*/
 
-@media (--viewport-md) {
-  .main-content {
-    padding-top: 48px;
-  }
-}
-  .main-content {
-    padding-top: 72px;
-  }
 
 .container,
 .container-md,
-.container-sm {
+.container-sm,
+.container-xl {
   margin-right: auto;
   margin-left: auto;
   padding-left: var(--unit);
@@ -33,6 +26,10 @@
   }
   .container-sm {
     max-width: 600px;
+    margin: auto;
+  }
+  .container-xl {
+    max-width: 1250px;
     margin: auto;
   }
 }

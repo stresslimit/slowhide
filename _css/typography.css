@@ -57,6 +57,14 @@ ul.bulletless {
 a {
   color: var(--text-color);
 }
+
+.impact-text a {
+  text-decoration: none;
+}
+.impact-text a:hover {
+  color: #00f;
+}
+
 a,
 nav a:hover,
 nav .active a,

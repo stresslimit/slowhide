@@ -2,35 +2,61 @@
 title: Slowhide
 ---
 
-<style>
-  body {
-    background: black;
-  }
-</style>
+
+<div class="section">
+  <div class="container" style="position:relative">
+
+    <p class="title-xs">Slow Factory Labs presents</p>
+
+    <p class="text-lg"><img style="width:170px" src="{{ 'images/logos/Slowhide-logo.png' | asset_url }}" /></p>
 
 
-<div class="section bg-black">
-  <div class="container-md text-center">
+    <div class="title-lg impact-text">
+      <a class="roller" data-for="vert">Vertically<br>
+        farmed </a><br>
+      <a class="roller" data-for="leath">leather <br>
+        alternative</a> <br>
+      <a class="roller" data-for="bio">that is <br>
+        biodegrable</a> <br>
+      <a class="roller" data-for="circ">circular & </a><br>
+      <a class="roller" data-for="plast">contains <br>
+        no plastic <br>
+        whatosever</a>
+    </div>
 
-    <p class="video-container"><iframe width="800" height="450" src="https://www.youtube.com/embed/srrFFWPEYF0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+<div class="text-lg">
+    <div id="rolled-vert" class="rolled pointer pointer2">Bacteria nanocellulose vertically farmed locally in New York City designed to grow liquid leather at scale.</div>
+    <div id="rolled-leath" class="rolled pointer pointer4">Animal leather is responsible for 300 Million tons of CO₂E annually, and plastic leather as an alternative isn’t much better.</div>
+    <div id="rolled-bio" class="rolled pointer pointer5">Most leather alternatives contain plastic and synthetic polymers that are not biodegrable, rendering the entire textile non-biodegrable. Slowhide believes that the inclusion of plastic defeats the purpose of creating a material that will return to the earth as food for our global ecosystems.</div>
+    <div id="rolled-circ" class="rolled pointer pointer">Slowhide grows from tea & coffee organic waste, making use of organic matter that would otherwise go to landfill.</div>
+    <div id="rolled-plast" class="rolled pointer pointer6">Plastics are made from fossil fuels, a conflict material that are the responsible for the vast majority of greenhouse gas emissions globally. Plastics, whether from synthetic or bio sources, do not biodegrade and will continue to leach toxins into the environment for hundreds of years after disposal.</div>
+</div>
 
-    <p class="on-dark-bg text-lg">Slowhide is an all-natural, plant-based alternative to animal leather, <br>made from a waste-to-resource regenerative supply chain.</p>
 
-    <p class="section"><img style="max-width:333px" src="{{ 'images/logos/Logo_SlowHide_White.png' | asset_url }}" alt="Slowhide"></p>
+  </div>
+</div>
+
+
+  <div class="container-xl">
+
+    <p class="video-container"><iframe width="800" height="450" src="https://www.youtube.com/embed/XgtTmAr65PM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+    <!-- <p class="on-dark-bg text-lg">Slowhide is an all-natural, plant-based alternative to animal leather, <br>made from a waste-to-resource regenerative supply chain.</p> -->
+
+    <!-- <p class="section"><img style="max-width:333px" src="{{ 'images/logos/Logo_SlowHide_White.png' | asset_url }}" alt="Slowhide"></p> -->
 
     <!-- <a href="mailto:join@slowfactorylabs.co" class="btn btn--relief btn--white" style="background: #e9eaeb url({{ 'images/util/noun_PDF_4056926.png' | asset_url }}) .5em 50% no-repeat; padding-left: 2em; background-size: 1em;">
       For Investors
     </a> -->
 
   </div>
-</div>
 
 
-<div class="section bg-white">
+<div class="section">
   <div class="container">
 
     <p class="title-sm">Awards & Press</p>
-    <div class="row valign-top">
+    <div class="row-xs valign-top">
       <div class="third">
         <p>Finalist — Material Innovation:</p>
         <p><img src="{{ 'images/logos/Fast-Company_2021InnovationByDesign.jpg' | asset_url }}" alt=""></p>
@@ -44,6 +70,59 @@ title: Slowhide
         <p><a href="https://www.fastcompany.com/90702567/brands-like-nike-coach-and-gap-are-destroying-the-amazon-with-their-leather-products"><img src="{{ 'images/logos/Fast-Company-Logo-Web.jpg' | asset_url }}" alt=""></a></p>
       </div>
     </div>
+
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="container" style="position:relative;">
+
+    <p class="title-lg">Slowhide is a unique product that grows in urban areas from tea and coffee waste, biodegrable yet durable — it is the future of material sustainability in the fashion, automotive & furniture industries.</p>
+
+    <div class="pointer pointer1">
+      <p class="text-lg">Slowhide is raising a Seed Round, to be involved as an investor, <a href="mailto:join@slowfactory.com?subject=Investing%20in%20Slowhide">request more information here</a>.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="container">
+
+    <p class="title-lg">Slowhide is currently in R&D with brands of many sizes. The future lies in the ability to innovate and collaborate.</p>
+
+    <div class="pointer pointer1">
+      <p class="text-lg">For brands interested in joining the material revolution, <a href="mailto:join@slowfactory.com?subject=Request%20Slowhide%20sample">request a sample</a>.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="container-xl">
+    <section id="carousel-1" class="splide carousel" data-splide='{"type":"loop","perPage":1,"autoplay":true}'>
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for carousel in site.data.carousel %}
+          <li class="splide__slide" style="height: auto">
+            <img src="{{ carousel.img | asset_url }}" />
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="container-sm">
+
+    <p><img src="{{ 'images/everything-you-make.png' | asset_url }}" /></p>
 
   </div>
 </div>

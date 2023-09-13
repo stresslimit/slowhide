@@ -12,6 +12,8 @@
 /* general styles */
 @import "style.css";
 
+@import "@splidejs/splide/dist/css/splide.min.css";
+
 /* page elements */
 @import "header.css";
 @import "menu.css";

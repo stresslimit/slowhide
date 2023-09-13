@@ -1,15 +1,7 @@
 
 .header-container {
-  background: black;
-  position: fixed;
-  width: 100%;
-  z-index: 99;
 }
 .header {
-  font-size: 90%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  justify-content: space-between;
 }
 
 

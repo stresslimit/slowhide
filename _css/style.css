@@ -3,3 +3,54 @@
 body {
   background: var(--white);
 }
+
+.roller {
+  position: relative;
+  z-index: 1;
+}
+.rolled {
+  position: relative;
+  z-index: 0;
+}
+@media (--viewport-xs-only) {
+  .rolled {
+    display: none !important;
+  }
+}
+@media (--viewport-md) {
+  .rolled {
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    width: 30%;
+  }
+  
+  .pointer1 {
+    background: url(/assets/images/util/pointer1.png) 0 50% no-repeat;
+  }
+  .pointer2 {
+    background: url(/assets/images/util/pointer2.png) 0 50% no-repeat;
+  }
+  .pointer3 {
+    background: url(/assets/images/util/pointer3.png) 0 50% no-repeat;
+  }
+  .pointer4 {
+    background: url(/assets/images/util/pointer4.png) 0 50% no-repeat;
+  }
+  .pointer5 {
+    background: url(/assets/images/util/pointer5.png) 0 50% no-repeat;
+  }
+  .pointer6 {
+    background: url(/assets/images/util/pointer6.png) 0 50% no-repeat;
+  }
+  .pointer {
+    /* max-width: 20em; */
+    margin-left: 20%;
+    margin-right: 5%;
+    padding-left: 375px;
+    background-size: contain;
+    /* float: right; */
+  }
+
+}
