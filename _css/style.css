@@ -4,9 +4,13 @@ body {
   background: var(--white);
 }
 
+.active {
+  color: #00f;
+}
 .roller {
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .rolled {
   position: relative;
@@ -25,7 +29,7 @@ body {
     top: 40%;
     width: 30%;
   }
-  
+
   .pointer1 {
     background: url(/assets/images/util/pointer1.png) 0 50% no-repeat;
   }

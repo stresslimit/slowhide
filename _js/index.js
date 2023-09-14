@@ -19,16 +19,29 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
 
 function homeRollovers() {
-  let a = document.querySelectorAll('a.roller')
-  a.forEach((el) => {
-    el.addEventListener('mouseover', function() {
-      // console.log(`rolled-${el.dataset.for}`)
-      document.getElementById(`rolled-${el.dataset.for}`).style.display = 'block'
-    })
-    el.addEventListener('mouseout', function() {
-      document.getElementById(`rolled-${el.dataset.for}`).style.display = 'none'
-    })
+
+  let aelements = document.querySelectorAll('a.roller')
+  aelements.forEach((el) => {
+    el.addEventListener('mouseover', setActive)
+    el.addEventListener('mouseout', unActive)
   })
+  const mouseoverEvent = new Event('mouseover');
+  document.getElementById(`roller-vert`).dispatchEvent(mouseoverEvent)
+
+  // setActive('vert')
+
+  function setActive () {
+    // console.log(this)
+    this.classList.add('active')
+    document.getElementById(`rolled-${this.dataset.for}`).style.display = 'block'
+  }
+  function unActive () {
+    // console.log(this)
+    this.classList.remove('active')
+    document.getElementById(`rolled-${this.dataset.for}`).style.display = 'none'
+  }
+
+
 }
 
 
